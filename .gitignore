@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mix artifacts
 /_build
 /deps
@@ -14,3 +15,9 @@ erl_crash.dump
 # comment this depending on your deployment strategy.
 /priv/static/css
 /priv/static/js
+=======
+/_build
+/deps
+erl_crash.dump
+*.ez
+>>>>>>> b37716006c15fc4c0e8626507c5417fb50be1fa4
