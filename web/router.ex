@@ -18,6 +18,10 @@ defmodule HelloPhoenix.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+    get "/test", PageController, :test
+  end
+  socket "/ws", HelloPhoenix do
+     channel "rooms:*", RoomChannel
   end
 
   # Other scopes may use custom stacks.
