@@ -26,6 +26,12 @@ defmodule HelloPhoenix.Router do
      channel "rooms:*", RoomChannel
   end
 
+  scope "/api", HelloPhoenix do
+    pipe_through :api
+
+    resources "/users", ApiController
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", HelloPhoenix do
   #   pipe_through :api
