@@ -19,6 +19,8 @@ defmodule HelloPhoenix.Router do
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     get "/test", PageController, :test
+
+    resources "/users", UserController
   end
   socket "/ws", HelloPhoenix do
      channel "rooms:*", RoomChannel
