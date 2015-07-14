@@ -32,4 +32,5 @@ config :hello_phoenix, HelloPhoenix.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "jonatan",
   password: "1234",
-  database: "hello_phoenix_dev"
+  database: "hello_phoenix_dev",
+  size: 10 # The amount of database connections in the pool
